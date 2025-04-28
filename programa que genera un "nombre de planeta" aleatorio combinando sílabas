@@ -1,0 +1,17 @@
+import java.util.Random;
+
+public class GeneradorDePlanetas {
+    public static void main(String[] args) {
+        String[] inicio = {"Zor", "Vel", "Xan", "Mor", "Kal", "Fer", "Lun", "Tar"};
+        String[] medio = {"a", "e", "i", "o", "u", "ar", "or", "ir"};
+        String[] fin = {"dor", "nia", "tis", "lon", "vus", "mir", "tar", "zen"};
+
+        Random random = new Random();
+
+        String planeta = inicio[random.nextInt(inicio.length)] +
+                         medio[random.nextInt(medio.length)] +
+                         fin[random.nextInt(fin.length)];
+
+        System.out.println("¡Tu nuevo planeta es: " + planeta + "!");
+    }
+}
